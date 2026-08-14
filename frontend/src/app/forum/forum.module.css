@@ -1,0 +1,59 @@
+:root {
+  height: 100svh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.forum-layout {
+  display: flex;
+  flex-direction: column;
+
+  height: 100svh;
+}
+
+.header-div {
+  height: var(--header-height);
+}
+
+.page-div {
+  display: flex;
+  flex-direction: row;
+
+  height: var(--page-height);
+
+  /* Телефоны */
+  @media (orientation: portrait) {
+    flex-direction: column;
+  }
+}
+
+.page-div nav {
+  width: var(--navigation-width);
+  height: 100%;
+
+  /* Телефоны */
+  @media (orientation: portrait) {
+    width: 100%;
+  }
+}
+
+.page-div main {
+  width: var(--main-width);
+  min-height: 0;
+  flex-grow: 1;
+
+  /* Телефоны */
+  @media (orientation: portrait) {
+    width: 100%;
+  }
+}
+
+.page-div main:empty {
+  flex-grow: 0;
+  display: none;
+}
+
+/* Стили заголовка */
+.section-title {
+  justify-self: center;
+}

@@ -1,0 +1,38 @@
+.registration-div {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100svh;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+
+  height: 85%;
+  min-width: 300px;
+  width: 30%;
+
+  gap: 1em;
+  padding: 1em 0.75em;
+
+  /* Телефоны */
+  @media (orientation: portrait) {
+    min-width: 0px;
+    width: 70%;
+  }
+}
+
+.registration-form input {
+  height: 3em;
+
+  /* Исправление полупрозрачного текста импут поля */
+  -webkit-text-fill-color: var(--white-color);
+}
+
+.registration-form button {
+  height: 3em;
+  margin-top: auto;
+}

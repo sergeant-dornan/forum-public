@@ -1,0 +1,31 @@
+.header-div {
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--white-color);
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.left,
+.right {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.left img {
+  aspect-ratio: 1 / 1;
+  height: 50%;
+}
+
+.left h1 {
+  margin: 0px;
+}

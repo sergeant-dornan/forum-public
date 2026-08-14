@@ -1,0 +1,1 @@
+CREATE INDEX idx_topics_search ON topics USING GIN(search_vector);

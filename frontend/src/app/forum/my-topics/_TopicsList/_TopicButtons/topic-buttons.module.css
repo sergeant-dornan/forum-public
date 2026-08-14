@@ -1,0 +1,16 @@
+/* Стили кнопок */
+.topic-button {
+  box-sizing: border-box;
+
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0.25em;
+  border: 4px var(--crimson-color);
+}
+
+.topic-button h4 {
+  margin: 4px;
+}

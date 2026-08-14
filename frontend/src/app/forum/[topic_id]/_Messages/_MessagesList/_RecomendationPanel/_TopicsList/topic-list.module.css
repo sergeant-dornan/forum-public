@@ -1,0 +1,34 @@
+.topic-list {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  row-gap: 15px;
+
+  width: 100%;
+  margin: 0px;
+  padding: 7.5px;
+
+  overflow-y: auto;
+  max-height: 50svh;
+
+  box-sizing: border-box;
+  border-bottom: 3px solid var(--grey-color);
+  border-radius: 0px 0px 30px 30px;
+}
+
+.topic-list h2 {
+  align-self: center;
+  margin: 0px;
+}
+
+.topic-list li a {
+  display: block;
+
+  padding: 15px;
+
+  text-align: center;
+  font-size: 1.17em;
+  font-weight: bold;
+}

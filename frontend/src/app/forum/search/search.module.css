@@ -1,0 +1,61 @@
+.search-div {
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  height: 100%;
+  width: 100%;
+
+  /* Телефоны */
+  @media (orientation: portrait) {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Стили заголовков */
+.section-title {
+  justify-self: center;
+}
+
+/* Стили опций */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  border-radius: 15px;
+  margin-inline: 10%;
+  padding-block: 15px;
+
+  /* Телефоны */
+  @media (orientation: portrait) {
+    margin-inline: 0px;
+  }
+}
+
+.options>* {
+  display: flex;
+  min-height: min-content;
+  padding-inline: 10px;
+  height: 30px;
+  align-items: center;
+}
+
+.options label {
+  border-bottom: 2px solid var(--black-color);
+  padding-bottom: 5px;
+}
+
+.options label select {
+  height: 100%;
+  word-break: break-word;
+}
+
+.options input {
+  display: inline;
+}
+
+/* Стиль чекбокса */
+.checkbox {
+  accent-color: var(--black-color);
+}

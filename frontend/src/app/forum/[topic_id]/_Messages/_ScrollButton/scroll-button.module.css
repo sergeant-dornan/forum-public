@@ -1,0 +1,16 @@
+/* СТИЛИ КНОПКИ ДЛЯ ПРОМАТЫВАНИЯ В КОНЕЦ СТРАНИЦЫ */
+.scroll-button {
+  bottom: 1em;
+  right: 1em;
+  box-sizing: border-box;
+  height: 72px;
+  width: 72px;
+  border: 2px solid var(--black-color);
+  border-radius: 50%;
+
+  position: fixed;
+}
+
+.scroll-button button {
+  padding: 0px;
+}

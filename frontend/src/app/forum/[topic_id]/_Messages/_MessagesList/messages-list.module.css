@@ -1,0 +1,35 @@
+.virtuoso-messages {
+  height: 100%;
+  width: 100%;
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.messages-date {
+  align-self: center;
+  text-align: center;
+
+  /* Телефоны */
+  @media (orientation: portrait) {
+    align-self: self-start;
+    width: 20%;
+  }
+}
+
+.sticky-wrapper {
+  position: sticky;
+  top: 0px;
+  margin-left: auto;
+
+  height: 0px;
+  width: 40%;
+
+  /* Телефоны */
+  @media (orientation: portrait) {
+    width: 70%;
+  }
+}

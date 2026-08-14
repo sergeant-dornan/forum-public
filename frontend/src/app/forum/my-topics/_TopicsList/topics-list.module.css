@@ -1,0 +1,49 @@
+.topics {
+  width: 100%;
+  display: grid;
+  row-gap: 2em;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: repeat(2, 45%);
+
+  /* Телефоны */
+  @media (orientation: portrait) {
+    grid-template-columns: repeat(1, 85%);
+  }
+}
+
+/* Стиль контейнера темы */
+.topic {
+  padding: 0px;
+  border: 6px solid var(--pink-color);
+}
+
+/* Стиль верхушки темы */
+.topic-head {
+  text-align: center;
+  word-break: break-word;
+
+  padding: 0px;
+
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 4px solid var(--crimson-color);
+  border-bottom: 4px solid var(--pink-color);
+}
+
+.topic-head a {
+  display: block;
+
+  padding: 15px;
+
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+/* Стиль кнопок для удаления и закрытия тем */
+.topic-foot {
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}

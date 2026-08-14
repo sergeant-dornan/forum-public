@@ -1,0 +1,35 @@
+{
+  "name": "forum-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc && tsc-alias",
+    "start": "node dist/app.js",
+    "migrate": "tsx scripts/migrate.ts"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "helmet": "^8.2.0",
+    "pg": "^8.16.3",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "@forum/shared": "file:../shared",
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "@types/pg": "^8.20.0",
+    "@types/ws": "^8.18.1",
+    "@vitest/coverage-v8": "^4.1.6",
+    "tsc-alias": "^1.8.17",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
+  }
+}

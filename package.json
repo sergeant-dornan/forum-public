@@ -1,0 +1,32 @@
+{
+  "name": "forum",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+
+    "install:frontend": "npm --prefix frontend install",
+    "install:backend": "npm --prefix backend install",
+    "install:all": "npm run install:frontend && npm run install:backend",
+
+    "build:frontend": "npm --prefix frontend run build",
+    "build:backend": "npm --prefix backend run build",
+    "build:all": "npm run build:frontend && npm run build:backend",
+
+    "start:frontend": "npm --prefix frontend start",
+    "start:backend": "npm --prefix backend start",
+    
+    "migrate": "npm --prefix backend run migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeant-dornan/forum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sergeant-dornan/forum/issues"
+  },
+  "homepage": "https://github.com/sergeant-dornan/forum#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.19"
+  }
+}
