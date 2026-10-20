@@ -1,0 +1,18 @@
+/* Стили контейнера страницы */
+.panel-div {
+  position: absolute;
+
+  width: 100%;
+
+  border-bottom-left-radius: 50px;
+}
+
+/* Стили кнопки "Показать похожие темы" */
+.panel-div button {
+  width: 100%;
+  border-bottom: 2px solid var(--white-color);
+}
+.panel-div h3 {
+  margin: 0px;
+  font-style: italic;
+}

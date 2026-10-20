@@ -1,0 +1,39 @@
+.auth-div {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  row-gap: 1em;
+  height: 100svh;
+}
+
+.auth-div h1 {
+  text-align: center;
+}
+
+.auth-links {
+  display: flex;
+  gap: 1em 2em;
+  width: 80%;
+
+  /* Телефоны */
+  @media (orientation: portrait) {
+    flex-direction: column;
+  }
+}
+
+.auth-link {
+  box-sizing: border-box;
+  height: 6em;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-link:hover {
+  color: var(--black-color)
+}

@@ -1,0 +1,38 @@
+.login-div {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100svh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+  height: 60%;
+  min-width: 300px;
+  width: 25%;
+
+  gap: 1em;
+  padding: 1em 0.75em;
+
+  /* Телефоны */
+  @media (orientation: portrait) {
+    min-width: 0px;
+    width: 70%;
+  }
+}
+
+.login-form input {
+  height: 4em;
+
+  /* Исправление полупрозрачного текста импут поля */
+  -webkit-text-fill-color: var(--white-color);
+}
+
+.login-form button {
+  height: 4em;
+  margin-top: auto;
+}

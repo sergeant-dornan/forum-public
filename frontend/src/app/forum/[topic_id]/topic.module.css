@@ -1,0 +1,36 @@
+.page-div {
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.location-header {
+  word-break: break-word;
+
+  position: relative;
+  overflow-y: auto;
+
+  display: flex;
+  column-gap: 5px;
+  flex-shrink: 0;
+
+  margin: 0px;
+  max-height: var(--header-height);
+  border-bottom: 2px solid var(--white-color);
+}
+
+.topic-div {
+  /* Скрываем полосу прокрутки */
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  flex: 1;
+}
+
+.messages-input {
+  flex-shrink: 0;
+  max-height: var(--header-height) * 2;
+}

@@ -1,0 +1,7 @@
+.button {
+  border: 3px solid var(--white-color);
+  padding-block: 5px;
+  font-weight: bold;
+
+  height: 60%;
+}

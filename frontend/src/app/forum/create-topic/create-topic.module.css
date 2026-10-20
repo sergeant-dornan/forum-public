@@ -1,0 +1,54 @@
+/* Родителский контейнер части страницы */
+.create-topic-div {
+  align-self: center;
+  flex-grow: 1;
+  justify-self: center;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Родительский контейнер формы */
+.form {
+  width: 70%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  /* Телефоны */
+  @media (orientation: portrait) {
+    width: 95%;
+  }
+}
+
+/* Части формы */
+.form h1 {
+  align-self: center;
+  margin-bottom: 0px;
+}
+
+.form select {
+  border: 3px solid var(--white-color);
+}
+
+.form button {
+  align-self: center;
+  margin-bottom: 1em;
+  height: 2em;
+  width: 50%;
+}
+
+.form textarea {
+  height: 10em;
+  resize: none;
+
+  /* Телефоны */
+  @media (orientation: portrait) {
+    height: 7.5em;
+  }
+}

@@ -1,0 +1,16 @@
+.navigation-div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  overflow-y: scroll;
+
+  background-color: var(--black-color);
+
+  /* Минимальный размер = минимальному размеру, при котором нет overflow-x */
+  min-width: min-content;
+  padding: 0px;
+
+  /* ПК */
+  width: 100%;
+  height: 100%;
+}

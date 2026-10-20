@@ -1,0 +1,19 @@
+/* Отдельные части категории и сама категория */
+.category {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.category h3,
+.category h5 {
+  margin: 0px;
+  word-break: keep-all;
+}
