@@ -1,0 +1,21 @@
+/* Стили опций */
+.options {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+  text-justify: center;
+
+  margin: 0px 20px 10px 20px;
+  gap: 10px;
+}
+
+.options a {
+  display: block;
+}
+
+.options a h2 {
+  margin: 0px;
+}

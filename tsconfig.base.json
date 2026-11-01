@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // 1. Язык и окружение (target / module / lib) 
+    "target": "ES2022",
+    "moduleDetection": "force",
+    // 2. Совместимость с модульными системами и импортами 
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    // 3. Строгость проверки типов 
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    // 4. Дополнительные проверки кода 
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "forceConsistentCasingInFileNames": true,
+    // 5. Вывод и отладка 
+    "sourceMap": true,
+    // 6. Производительность и прочее 
+    "skipLibCheck": true
+  }
+}

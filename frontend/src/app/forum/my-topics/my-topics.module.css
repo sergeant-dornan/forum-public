@@ -1,0 +1,13 @@
+/* Контейнер самой страницы */
+.topics-div {
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  max-height: 100%;
+  width: 100%;
+}
+
+/* Стили заголовка тем */
+.section-title {
+  justify-self: center;
+}

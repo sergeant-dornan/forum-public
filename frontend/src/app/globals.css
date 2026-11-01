@@ -1,0 +1,155 @@
+@import 'normalize.css';
+
+:root {
+  /* Отключение выделения */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  background-color: rgb(236, 236, 236);
+  color: rgb(36, 36, 36);
+  font-family: Arial, Helvetica, sans-serif;
+
+  --white-color: rgb(236, 236, 236);
+  --black-color: rgb(47, 47, 68);
+  --pink-color: rgb(187, 65, 75);
+  --crimson-color: rgb(148, 47, 71);
+  --grey-color: rgb(175, 175, 175);
+  --padding-left: 10px;
+  --padding-right: 10px;
+
+  --header-height: 10svh;
+  --page-height: 90svh;
+  --navigation-width: 25svw;
+  --main-width: 75svw;
+}
+
+.pink {
+  background-color: var(--pink-color);
+  border-width: 0px;
+  color: var(--white-color);
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+}
+
+.crimson {
+  background-color: var(--crimson-color);
+  border-width: 0px;
+  color: var(--white-color);
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+}
+
+.black {
+  background-color: var(--black-color);
+  border-width: 0px;
+  color: var(--white-color);
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+}
+
+.white {
+  background-color: var(--white-color);
+  border-width: 0px;
+  color: var(--black-color);
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+}
+
+.grey {
+  background-color: var(--grey-color);
+  border-width: 0px;
+  color: var(--black-color);
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+}
+
+.square {
+  padding: 0px;
+  border: none;
+}
+
+.rounded {
+  border-radius: 30px;
+}
+
+.hidden {
+  display: none !important;
+  position: absolute;
+  pointer-events: none;
+}
+
+.mobile-hidden {
+  /* Телефоны */
+  @media (orientation: portrait) {
+    display: none !important;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+.computer-hidden {
+  /* Компьютеры */
+  @media (orientation: landscape) {
+    display: none !important;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+/* Класс для включения выделения */
+.selectable-text {
+  -webkit-user-select: text; /* Safari */
+  -moz-user-select: text; /* Firefox */
+  -ms-user-select: text; /* IE10+/Edge */
+  user-select: text; /* Стандартный синтаксис */
+}
+
+/* Исправление ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Глобальная кастомизация всех модалок */
+.swal2-popup {
+  background-color: var(--black-color);
+}
+.swal2-title, .swal2-html-container {
+  color: var(--white-color);
+}
+.swal2-confirm {
+  background-color: var(--pink-color);
+}
+.swal2-confirm:hover {
+  background-color: var(--grey-color);
+  color: var(--black-color);
+  border-color: var(--black-color);
+}
+.swal2-cancel {
+  background-color: var(--crimson-color);
+}
+.swal2-cancel:hover {
+  background-color: var(--grey-color);
+  color: var(--black-color);
+  border-color: var(--black-color);
+}
+
+/* Разное */
+button {
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* Отключаем подсветку от автозаполнения */
+input:-webkit-autofill {
+  transition: background-color 99999999s ease 0s;
+}

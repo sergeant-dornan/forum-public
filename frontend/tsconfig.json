@@ -1,0 +1,35 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    
+    "lib": ["dom", "dom.iterable", "ES2022"],
+    "types": ["node"],
+    
+    "noUncheckedSideEffectImports": true,
+    
+    "paths": { "@/*": ["./src/*"] },
+    
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "incremental": true,
+    "plugins": [{ "name": "next" }],
+    
+    "allowJs": true
+  },
+  "include": [
+    "declarations.d.ts",
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "src/**/*",
+    "**/*.mts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": ["node_modules", "dist", ".next"]
+}

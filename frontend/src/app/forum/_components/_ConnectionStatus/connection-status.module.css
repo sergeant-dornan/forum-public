@@ -1,0 +1,11 @@
+.connection-status {
+  position: fixed;
+  z-index: 9999;
+  right: 20px;
+  top: calc(var(--header-height) * 2 + 10px);
+  border: 2px solid var(--white-color);
+}
+
+.connection-status h2 {
+  margin: 10px;
+}

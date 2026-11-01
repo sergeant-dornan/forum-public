@@ -1,0 +1,34 @@
+{
+  "name": "@forum/shared",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./schemas": {
+      "types": "./dist/schemas/_index.schemas.d.ts",
+      "import": "./dist/schemas/_index.schemas.js"
+    },
+    "./api": {
+      "types": "./dist/api/_index.api.d.ts",
+      "import": "./dist/api/_index.api.js"
+    },
+    "./http": {
+      "types": "./dist/api/http/_index.http.d.ts",
+      "import": "./dist/api/http/_index.http.js"
+    },
+    "./ws": {
+      "types": "./dist/api/ws/_index.ws.d.ts",
+      "import": "./dist/api/ws/_index.ws.js"
+    }
+  },
+  "scripts": {
+    "dev": "tsc --build tsconfig.json --watch",
+    "build": "tsc --build tsconfig.json && node scripts/fix-dts.js"
+  },
+  "dependencies": {
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}

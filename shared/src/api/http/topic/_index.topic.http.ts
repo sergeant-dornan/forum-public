@@ -1,0 +1,10 @@
+export * as ChangeTopicRole from "./changeTopicRole.http.js";
+export * as ChangeTopicStatus from "./changeTopicStatus.http.js";
+export * as CreateTopic from "./createTopic.http.js";
+export * as DeleteTopic from "./deleteTopic.http.js";
+export * as DeleteTopicRole from "./deleteTopicRole.http.js";
+export * as GetSimilarTopics from "./getSimilarTopics.http.js";
+export * as GetTopic from "./getTopic.http.js";
+export * as GetTopicRoles from "./getTopicRoles.http.js";
+export * as GetTopics from "./getTopics.http.js";
+export * as SearchTopics from "./searchTopics.http.js";

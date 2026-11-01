@@ -1,0 +1,32 @@
+{
+  "name": "forum",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:shared": "npm run dev -w @forum/shared",
+    "dev:frontend": "npm run dev -w forum-frontend",
+    "dev:backend": "npm run dev -w forum-backend",
+    
+    "build:shared": "npm run build -w @forum/shared",
+    "build:frontend": "npm run build -w forum-frontend",
+    "build:backend": "npm run build -w forum-backend",
+    "build:all": "npm run build:shared && npm run build:frontend && npm run build:backend",
+    
+    "start:frontend": "npm run start -w forum-frontend",
+    "start:backend": "npm run start -w forum-backend",
+    "migrate": "npm run migrate -w forum-backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeant-dornan/forum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sergeant-dornan/forum/issues"
+  },
+  "homepage": "https://github.com/sergeant-dornan/forum#readme"
+}

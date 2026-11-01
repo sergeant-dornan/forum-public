@@ -1,0 +1,21 @@
+.tech-info {
+  position: fixed;
+  bottom: 0px;
+
+  padding: 10px;
+  margin: 10px;
+
+  display: flex;
+}
+
+.tech-info p {
+  padding: 0px;
+  margin: 0px;
+
+  max-height: 10svh;
+  overflow-y: auto;
+}
+
+.tech-info button {
+  box-sizing: border-box;
+}

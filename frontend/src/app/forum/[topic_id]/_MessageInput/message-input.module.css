@@ -1,0 +1,36 @@
+/* СТИЛИ ПОЛЯ ВВОДА СООБЩЕНИЯ */
+.message-input {
+  display: flex;
+
+  gap: 2px;
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+  max-width: 75svw;
+}
+
+.message-input textarea {
+  resize: none;
+  line-height: normal;
+
+  box-sizing: border-box;
+  /* Размер = 75svw - размер панели навигации - размер кнопки прокрутки страницы*/
+  width: calc(75svw - 25svw - 72px);
+  /* Телефоны */
+  @media (orientation: portrait) {
+    width: calc(75svw - 72px);
+  }
+
+  border: 2px solid var(--black-color);
+}
+
+.message-input textarea::placeholder {
+  color: var(--black-color);
+}
+
+.message-input button {
+  box-sizing: border-box;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+
+  border: 2px solid var(--black-color);
+}
